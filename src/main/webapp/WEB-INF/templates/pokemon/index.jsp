@@ -13,10 +13,11 @@
             <li>
                 <!-- 포켓몬 이름 출력 -->
                 <h2>${pokemon.name}</h2>
-                <h2>${pokemon.url}</h2>
 
                 <!-- 포켓몬 이미지 출력 (front_default 스프라이트 사용) -->
             <!--    <img src="${pokemon.sprites.back_default}" alt="${pokemon.name} image"> -->
+
+            <img src="${pokemon.sprites}" alt="${pokemon.name} image">
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="${pokemon.name} image">
 
                 <!-- 포켓몬 몸무게 출력 -->

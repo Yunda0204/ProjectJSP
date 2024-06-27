@@ -18,7 +18,7 @@ public class PokemonController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String apiUrl = "https://pokeapi.co/api/v2/pokemon";
+        String apiUrl = "https://pokeapi.co/api/v2/pokemon/";
         HttpResponse<String> apiResponse = apiRequestService.request(apiUrl, "GET");
         Map<String, Object> data = apiRequestService.toMap(apiResponse);
 
